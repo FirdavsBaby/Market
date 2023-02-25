@@ -1,15 +1,14 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./Pages/Home"
 import "./main.scss"
+import NotFound from "./Pages/NotFound"
 function App() {
   return (
    <Routes>
     <Route path="/" element={<Home/>}/>
+    <Route path="*" element={<NotFound/>}/>
    </Routes>
   )
 }
-/**
- * https://dummyjson.com/products
- */
 
 export default App
