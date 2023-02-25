@@ -7,7 +7,7 @@ function useFetch(url) {
       let response = await res.json();
       let data = response.products;
       setProducts(data);
-      console.log(products);
+      console.log(data);
     })();
   }, []);
   return { products };

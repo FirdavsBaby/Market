@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/answer-question/" element={<SearchAnswer />} />
+      <Route path="/answer-question/:title" element={<SearchAnswer />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
