@@ -1,30 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import ReadMore from "../../Components/ReadMore";
 import useFetch from "../../Hooks/UseFetch";
 import "./SearchAnswer.scss";
 const SearchAnswer = () => {
     const { title } = useParams();
-    let products = useFetch("https://dummyjson.com/products");
-    let getProducts = products.products;
-    let filterProducts = getProducts.filter((p) => p.title === title);
-    console.log(filterProducts);
+    let {products, loading} = useFetch("https://dummyjson.com/products");
+    let filterProducts = products.find((p) => p.title === title) || title
   return (
-    <section id="moreInfo">
-      <div className="container">
-        {filterProducts?.map(p=> {
-          <div className="cardProduct">
-            <img src={p.images[0]} alt="ProductImage" />
-            <h1>{p.title}</h1>
-            <h2>
-              Cartegory: {p.category} Brand: {p.brand}
-            </h2>
-            <p>{filterProducts.description}</p>
-            <span>
-              Price: {p.price}$ ; Rating: {p.rating}; Stock: {p.stock}
-            </span>
-          </div>;
-        })}
-      </div>
+    <section id="moreInfo" className="container">
+      { loading ? <div className="loading">
+        <h1>Loading..</h1>
+        <div className="circle"></div>
+      </div> :
+      <ReadMore
+        title={filterProducts.title}
+        image={filterProducts.thumbnail}
+        category={filterProducts.category}
+        brand={filterProducts.brand}
+        stock={filterProducts.stock}
+        rating={filterProducts.rating}
+        price={filterProducts.price}
+        description={filterProducts.description}
+      />}
     </section>
   );
 };

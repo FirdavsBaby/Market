@@ -1,125 +1,222 @@
 @media (max-width: 1920px) {
-    section#moreInfo .container {
-        width: 100%;
-        min-height: 100vh;
-        background-color: #d86074;
-        display: flex;
-        justify-content: center;
-        .cardProduct {
-            width: 90%;
-            height: 100%;
-            padding: 30px 100px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            h1 {
-                font-size: 80px;
-                text-align: center;
-            }
-            h2 {
-                font-size: 40px;
-            }
-            p {
-                font-size: 30px;
-            }
-            span {
-                font-size: 20px;
-            }
-        }
+  section#moreInfo.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d86074;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    .loading {
+      width: 100%;
+      background-color: black;
+      max-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      h1 {
+        color: white;
+        position: absolute;
+        left: 46%;
+        font-size: 40px;
+        top: 47%;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        border-bottom: 5px solid white;
+        border-radius: 50%;
+        animation: loading 2s linear infinite;
+      }
     }
+    .cardProduct {
+      width: 90%;
+      height: 100%;
+      padding: 30px 100px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      img {
+        width: 50%;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 80px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 30px;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1450px) {
-    section#moreInfo .container {
-        width: 100%;
-        min-height: 100vh;
-        background-color: #d86074;
-        display: flex;
-        justify-content: center;
-        .cardProduct {
-            width: 90%;
-            height: 100%;
-            padding: 30px 100px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            h1 {
-                font-size: 80px;
-                text-align: center;
-            }
-            h2 {
-                font-size: 40px;
-            }
-            p {
-                font-size: 30px;
-            }
-            span {
-                font-size: 20px;
-            }
-        }
+  section#moreInfo.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d86074;
+    display: flex;
+    justify-content: center;
+    .loading {
+      width: 100%;
+      background-color: black;
+      max-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      h1 {
+        color: white;
+        position: absolute;
+        left: 44%;
+        font-size: 40px;
+        top: 47%;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        border-bottom: 5px solid white;
+        border-radius: 50%;
+        animation: loading 2s linear infinite;
+      }
     }
+    .cardProduct {
+      width: 90%;
+      height: 100%;
+      padding: 30px 100px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 80px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 30px;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
 }
 @media (max-width: 1050px) {
-    section#moreInfo .container {
-        width: 100%;
-        min-height: 100vh;
-        background-color: #d86074;
-        display: flex;
-        justify-content: center;
-        .cardProduct {
-            width: 90%;
-            height: 100%;
-            padding: 30px 100px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            h1 {
-                font-size: 60px;
-                text-align: center;
-            }
-            h2 {
-                font-size: 20px;
-            }
-            p {
-                font-size: 15px;
-            }
-            span {
-                font-size: 15px;
-            }
-        }
+  section#moreInfo.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d86074;
+    display: flex;
+    justify-content: center;
+    .loading {
+      width: 100%;
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      h1 {
+        color: white;
+        position: absolute;
+        left: 42%;
+        font-size: 40px;
+        top: 47%;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        border-bottom: 5px solid white;
+        border-radius: 50%;
+        animation: loading 2s linear infinite;
+      }
     }
+    .cardProduct {
+      width: 90%;
+      height: 100%;
+      padding: 30px 100px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 60px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+      span {
+        font-size: 15px;
+      }
+    }
+  }
 }
 @media (max-width: 550px) {
-    section#moreInfo .container {
-        width: 100%;
-        min-height: 100vh;
-        background-color: #d86074;
-        display: flex;
-        justify-content: center;
-        .cardProduct {
-            width: 90%;
-            height: 100%;
-            padding: 30px 30px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            h1 {
-                font-size: 20px;
-                text-align: center;
-            }
-            h2 {
-                font-size: 10px;
-            }
-            p {
-                font-size: 8px;
-            }
-            span {
-                font-size: 8px;
-            }
-        }
+  section#moreInfo.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d86074;
+    display: flex;
+    justify-content: center;
+    .loading {
+      width: 100%;
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      h1 {
+        color: white;
+        position: absolute;
+        left: 36%;
+        font-size: 20px;
+        top: 48.3%;
+      }
+      .circle {
+        width: 120px;
+        height: 120px;
+        border-bottom: 2px solid white;
+        border-radius: 50%;
+        animation: loading 2s linear infinite;
+      }
     }
+    .cardProduct {
+      width: 90%;
+      height: 100%;
+      padding: 30px 30px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 20px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 10px;
+      }
+      p {
+        font-size: 8px;
+      }
+      span {
+        font-size: 8px;
+      }
+    }
+  }
 }
