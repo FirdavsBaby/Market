@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import ReadMore from "../../Components/ReadMore";
 import useFetch from "../../Hooks/UseFetch";
-import "./SearchAnswer.scss";
+import "./more.scss";
 const SearchAnswer = () => {
     const { title } = useParams();
     let {products, loading} = useFetch("https://dummyjson.com/products");

@@ -3,7 +3,6 @@ import Card from "../Card";
 import "./cards.scss";
 const Cards = () => {
   let { products, loading } = useFetch("https://dummyjson.com/products");
-  // let getProducts = products
   console.log(products);
   return (
     <section id="cards">

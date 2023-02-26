@@ -18,7 +18,7 @@ const Card = ({ title, brand, stock, raiting , price, img}) => {
         <span>
           <i className="fa-solid fa-star"></i> {raiting} & {price} $
         </span>
-        <Link id="more" to={`/answer-question/${title}`}>
+        <Link id="more" to={`/more/${title}`}>
           Read More
         </Link>
       </div>

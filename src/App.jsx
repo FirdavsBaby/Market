@@ -2,12 +2,14 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import "./main.scss";
 import NotFound from "./Pages/NotFound";
-import SearchAnswer from "./Pages/SearchAnswer";
+import More from "./Pages/More";
+import CartPage from "./Pages/CartPage";
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/answer-question/:title" element={<SearchAnswer />} />
+      <Route path="/more/:title" element={<More />} />
+      <Route path="/cart" element={<CartPage/>}/>
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
